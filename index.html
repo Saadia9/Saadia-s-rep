@@ -40,71 +40,71 @@
 </head>
 <body>
 
-        <header>
-            <h3>Welcome To My Platform</h3>
-        </header>
+<header>
+    <h3>Welcome To My Platform</h3>
+</header>
 
-        <section>
-            <h5>Coding Languages I'm learning:</h5> 
-            <ul>
-               <li>HTML</li>
-               <li>CSS</li>
-               <li>JavaSript</li>
-               <li>Python</li>
-            </ul> 
-        </section>
+<section>
+    <h5>Coding Languages I'm learning:</h5> 
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+    </ul> 
+</section>
 
-        <button class="toggle-button" onclick="toggleInfo()">HTML Most Commonly Used Tags:</button>
+<button class="toggle-button" onclick="toggleInfo()">HTML Most Commonly Used Tags:</button>
 
-        <section id="html-tags" class="info-section">
-            <h2>Basic Structure:</h2>
-            <ul>
-                <li>HTML: Defines an HTML document.</li>
-                <li>Head: Contains meta-information about the HTML document.</li>
-                <li>Title: Sets the title of the HTML document (shown in the browser's title bar or tab).</li>
-            </ul>
-            <h3>Text Formatting:</h3>
-            <ul>
-                <li>p: Defines a paragraph</li>
-                <li>b or Strong: Defines bold text</li>
-                <li>i or em: Defines italic text</li>
-                <li><u>U: Defines underlined text (though not commonly recommended for use due to accessibility concerns)</u></li>
-            </ul>
-            <h3>Links and Navigation:</h3>
-            <ul>
-                <li>a: Defines a hyperlink</li>
-                <li>nav: Defines navigation links</li>
-                <li>ul: Defines a list of unordered items</li>
-                <li>ol: Defines a list of ordered items</li>
-                <li>li: Defines individual items within both ul or ol</li>
-            </ul>
-            <h3>Images and Multimedia:</h3>
-            <ul>
-                <li>img: Contains an image</li>
-                <li>video or audio: Contain a video or audio</li>
-            </ul>
-            <h3>Tables:</h3>
-            <ul>
-                <li>table: Defines a table</li>
-                <li>tr: Defines a table row</li>
-                <li>th: Defines a table header</li>
-                <li>td: Defines standard data cells within a table row</li>
-            </ul>
-            <h3>Style and Scripting:</h3>
-            <ul>
-                <li>style: Contains CSS styles within an HTML document.</li>
-                <li>script: Contains JavaScript or other scripting languages.</li>
-            </ul>
-        </section>
-    
-        <script>
-            function toggleInfo() {
-                var section = document.getElementById('html-tags');
-                section.classList.toggle('show');
-            }
-        </script>
-      
-      <button class="toggle-button" onclick="toggleCssSection()">CSS Most Commonly Used</button>
+<section id="html-tags" class="info-section">
+    <h2>Basic Structure:</h2>
+    <ul>
+        <li>HTML: Defines an HTML document.</li>
+        <li>Head: Contains meta-information about the HTML document.</li>
+        <li>Title: Sets the title of the HTML document (shown in the browser's title bar or tab).</li>
+    </ul>
+    <h3>Text Formatting:</h3>
+    <ul>
+        <li>p: Defines a paragraph</li>
+        <li>b or Strong: Defines bold text</li>
+        <li>i or em: Defines italic text</li>
+        <li><u>U: Defines underlined text (though not commonly recommended for use due to accessibility concerns)</u></li>
+    </ul>
+    <h3>Links and Navigation:</h3>
+    <ul>
+        <li>a: Defines a hyperlink</li>
+        <li>nav: Defines navigation links</li>
+        <li>ul: Defines a list of unordered items</li>
+        <li>ol: Defines a list of ordered items</li>
+        <li>li: Defines individual items within both ul or ol</li>
+    </ul>
+    <h3>Images and Multimedia:</h3>
+    <ul>
+        <li>img: Contains an image</li>
+        <li>video or audio: Contain a video or audio</li>
+    </ul>
+    <h3>Tables:</h3>
+    <ul>
+        <li>table: Defines a table</li>
+        <li>tr: Defines a table row</li>
+        <li>th: Defines a table header</li>
+        <li>td: Defines standard data cells within a table row</li>
+    </ul>
+    <h3>Style and Scripting:</h3>
+    <ul>
+        <li>style: Contains CSS styles within an HTML document.</li>
+        <li>script: Contains JavaScript or other scripting languages.</li>
+    </ul>
+</section>
+
+<script>
+    function toggleInfo() {
+        var section = document.getElementById('html-tags');
+        section.classList.toggle('show');
+    }
+</script>
+
+<button class="toggle-button" onclick="toggleCssSection()">CSS Most Commonly Used</button>
 
 <section id="css-section" class="info-section">
     <h3>Selectors</h3>
@@ -122,12 +122,13 @@
 <script>
     function toggleCssSection() {
         var section = document.getElementById('css-section');
-        section.classList.toggle('show'); // You can define 'show' class for the visible state in your CSS
+        section.classList.toggle('show');
     }
 </script>
 
-<section>
-    
+<button class="toggle-button" onclick="toggleJSInfo()">JavaScript Most Commonly Used</button>
+
+<section id="js-section" class="info-section">
     <h3>Variables (var, let, const):</h3>
     <li>Used to store data values.</li>
     <h3>Functions (function, Arrow Functions (=>)):</h3>
@@ -141,14 +142,21 @@
     <h3>Loops (for, while, do...while):</h3>
     <li>Used to repeatedly run a block of code.</li>
     <h3>DOM Manipulation (document):</h3>
-    <li>Used to interact with HTML elements and modify their content, attributes, and styles.javascript</li>
+    <li>Used to interact with HTML elements and modify their content, attributes, and styles.</li>
     <h3>Event Handling (addEventListener):</h3>
     <li>Used to respond to user interactions with web pages.</li>
     <h3>Promises (Promise):</h3>
     <li>Used for asynchronous programming, representing a value that may be available now, in the future, or never.</li>
     <h3>Modules (import, export):</h3>
     <li>Used for organizing and reusing JavaScript code.</li>
+</section>
 
-    </section>
-    </body>
-    </html>
+<script>
+    function toggleJSInfo() {
+        var section = document.getElementById('js-section');
+        section.classList.toggle('show');
+    }
+</script>
+
+</body>
+</html>
