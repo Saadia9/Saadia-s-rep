@@ -1,0 +1,31 @@
+/* styles.css */
+
+/* Styling the body */
+body {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(205, 192, 218);
+    color: aliceblue;
+}
+
+/* Styling sections */
+section {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(147, 112, 181);
+    color: aliceblue;
+    padding: 20px; /* Add padding for section content */
+    margin-bottom: 20px; /* Add spacing between sections */
+}
+header {
+    font-style: italic;
+}
+
+ul{
+    font-size: 19px;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}

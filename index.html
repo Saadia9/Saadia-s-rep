@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Practicing HTML and CSS</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .toggle-button {
+            background-color: hwb(232 24% 58%);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        /* Styling for sections */
+        .info-section {
+            display: none; /* Hide sections by default */
+            margin-bottom: 20px;
+        }
+
+        .info-section.show {
+            display: block; /* Show sections when 'show' class is applied */
+        }
+
+        .info-section h3 {
+            margin-top: 10px;
+        }
+
+        .info-section ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .info-section li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+        <header>
+            <h3>Welcome To My Platform</h3>
+        </header>
+
+        <section>
+            <h5>Coding Languages I'm learning:</h5> 
+            <ul>
+               <li>HTML</li>
+               <li>CSS</li>
+               <li>JavaSript</li>
+               <li>Python</li>
+            </ul> 
+        </section>
+
+        <button class="toggle-button" onclick="toggleInfo()">HTML Most Commonly Used Tags:</button>
+
+        <section id="html-tags" class="info-section">
+            <h2>Basic Structure:</h2>
+            <ul>
+                <li>HTML: Defines an HTML document.</li>
+                <li>Head: Contains meta-information about the HTML document.</li>
+                <li>Title: Sets the title of the HTML document (shown in the browser's title bar or tab).</li>
+            </ul>
+            <h3>Text Formatting:</h3>
+            <ul>
+                <li>p: Defines a paragraph</li>
+                <li>b or Strong: Defines bold text</li>
+                <li>i or em: Defines italic text</li>
+                <li><u>U: Defines underlined text (though not commonly recommended for use due to accessibility concerns)</u></li>
+            </ul>
+            <h3>Links and Navigation:</h3>
+            <ul>
+                <li>a: Defines a hyperlink</li>
+                <li>nav: Defines navigation links</li>
+                <li>ul: Defines a list of unordered items</li>
+                <li>ol: Defines a list of ordered items</li>
+                <li>li: Defines individual items within both ul or ol</li>
+            </ul>
+            <h3>Images and Multimedia:</h3>
+            <ul>
+                <li>img: Contains an image</li>
+                <li>video or audio: Contain a video or audio</li>
+            </ul>
+            <h3>Tables:</h3>
+            <ul>
+                <li>table: Defines a table</li>
+                <li>tr: Defines a table row</li>
+                <li>th: Defines a table header</li>
+                <li>td: Defines standard data cells within a table row</li>
+            </ul>
+            <h3>Style and Scripting:</h3>
+            <ul>
+                <li>style: Contains CSS styles within an HTML document.</li>
+                <li>script: Contains JavaScript or other scripting languages.</li>
+            </ul>
+        </section>
+    
+        <script>
+            function toggleInfo() {
+                var section = document.getElementById('html-tags');
+                section.classList.toggle('show');
+            }
+        </script>
+      
+      <button class="toggle-button" onclick="toggleCssSection()">CSS Most Commonly Used</button>
+
+<section id="css-section" class="info-section">
+    <h3>Selectors</h3>
+    <li>(*, element, .class, #id, :pseudo-class, [attribute], etc.): Selectors are not tags themselves but are fundamental to CSS. They are used to target HTML elements based on various criteria such as element type (div, p, a), class (.), id (#), attributes ([type='text']), and pseudo-classes (:hover, :focus, :nth-child(n)). </li>
+    <h3>Properties and Values:</h3>
+    <li>CSS properties (property-name) and values (value) define how elements are styled. Some common properties include color, font-size, background-color, border, padding, margin, width, height, display, position, float, text-align, font-family, line-height, etc.</li>
+    <h3>Box Model Properties:</h3>
+    <li>Properties that define the dimensions and spacing of elements within the box model: width, height, padding, margin, border.</li>
+    <h3>Text Styling Properties:</h3>
+    <li>Properties that control text appearance: color, font-family, font-size, font-weight, line-height, text-align, text-decoration, text-transform, letter-spacing, word-spacing, etc.</li>
+    <h3>Background and Border Properties:</h3>
+    <li>Properties related to element backgrounds and borders: background-color, background-image, background-size, background-position, border, border-radius, box-shadow, outline, etc.</li>
+</section>
+
+<script>
+    function toggleCssSection() {
+        var section = document.getElementById('css-section');
+        section.classList.toggle('show'); // You can define 'show' class for the visible state in your CSS
+    }
+</script>
+
+<section>
+    
+    <h3>Variables (var, let, const):</h3>
+    <li>Used to store data values.</li>
+    <h3>Functions (function, Arrow Functions (=>)):</h3>
+    <li>Used to define reusable blocks of code.</li>
+    <h3>Arrays (Array):</h3>
+    <li>Used to store multiple values in a single variable.</li>
+    <h3>Objects (Object):</h3>
+    <li>Used to store keyed collections of various data and more complex entities.</li>
+    <h3>Conditional Statements (if, else, else if):</h3>
+    <li>Used to perform different actions based on different conditions.</li>
+    <h3>Loops (for, while, do...while):</h3>
+    <li>Used to repeatedly run a block of code.</li>
+    <h3>DOM Manipulation (document):</h3>
+    <li>Used to interact with HTML elements and modify their content, attributes, and styles.javascript</li>
+    <h3>Event Handling (addEventListener):</h3>
+    <li>Used to respond to user interactions with web pages.</li>
+    <h3>Promises (Promise):</h3>
+    <li>Used for asynchronous programming, representing a value that may be available now, in the future, or never.</li>
+    <h3>Modules (import, export):</h3>
+    <li>Used for organizing and reusing JavaScript code.</li>
+
+    </section>
+    </body>
+    </html>
